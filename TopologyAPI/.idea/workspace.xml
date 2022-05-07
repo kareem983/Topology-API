@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a17b3e-5397-495f-85cc-0d1c55643026" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTopology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTopology.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTopology.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTopology.class" afterDir="false" />
     </list>
@@ -60,36 +58,56 @@
       <option name="presentableId" value="Default" />
       <updated>1651951595986</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding Unit Testing Dependencies (JUnit) into The Project">
+      <created>1651953857768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651953857768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding Unit Testing Dependencies (JUnit) into The Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Unit Testing Dependencies (JUnit) into The Project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Inspections" timestamp="1651952850465">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1651952850465" />
-    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1651953411002">
+    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1651956984502">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651953411002" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1651953389140">
+    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651956984502" />
+    <state x="129" y="56" key="DiffContextDialog" timestamp="1651956899480">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651953389140" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1651953389140">
+    <state x="129" y="56" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1651956899480" />
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1651956785161">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1651953389140" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1651953389140">
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651956785161" />
+    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1651956785161">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1651953389140" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1651953389140">
+    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1651956785161" />
+    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1651956785161">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1651953389140" />
+    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1651956785161" />
+    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1651956785161">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1651956785161" />
     <state x="213" y="24" key="Maven.ArtifactSearchDialog" timestamp="1651953521505">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="213" y="24" key="Maven.ArtifactSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1651953521505" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1651953870517">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1651953870517" />
   </component>
 </project>
