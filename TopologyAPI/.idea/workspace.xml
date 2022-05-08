@@ -3,17 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f1a17b3e-5397-495f-85cc-0d1c55643026" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ComponentData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIs/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APIs/API.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIs/JsonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APIs/JsonAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTopology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTopology.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NetList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/NetList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Topology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Topology.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Component.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ComponentData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Topology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Topology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/APIs/API.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/APIs/API.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/APIs/JsonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/APIs/JsonAPI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTopology.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTopology.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NetList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Topology.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Topology.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Topology.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,14 +90,22 @@
       <option name="project" value="LOCAL" />
       <updated>1651968469238</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding Read File From JSON File (Feature).&#10;Refactor the code design.&#10;Adding the First Topology Json File.">
+      <created>1652038993843</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652038993843</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding Unit Testing Dependencies (JUnit) into The Project" />
     <MESSAGE value="Adding All User Input Choices." />
     <MESSAGE value="Adding The OOP Design for the Topology.&#10;Adding Topology Json File." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding The OOP Design for the Topology.&#10;Adding Topology Json File." />
+    <MESSAGE value="Adding Read File From JSON File (Feature).&#10;Refactor the code design.&#10;Adding the First Topology Json File." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Read File From JSON File (Feature).&#10;Refactor the code design.&#10;Adding the First Topology Json File." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Inspections" timestamp="1651952850465">
@@ -111,38 +116,38 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1651963979713" />
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1652037426133">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1652041295256">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1652037426133" />
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1652041295256" />
     <state x="301" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1652037853222">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="301" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1652037853222" />
-    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1651968467171">
+    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1652038990771">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651968467171" />
+    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1652038990771" />
     <state x="129" y="56" key="DiffContextDialog" timestamp="1651956899480">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="129" y="56" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1651956899480" />
-    <state width="1323" height="233" key="GridCell.Tab.0.bottom" timestamp="1652038837169">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1652044177755">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="233" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1652038837169" />
-    <state width="1323" height="233" key="GridCell.Tab.0.center" timestamp="1652038837169">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1652044177755" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1652044177755">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="233" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1652038837169" />
-    <state width="1323" height="233" key="GridCell.Tab.0.left" timestamp="1652038837169">
+    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1652044177755" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1652044177755">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="233" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1652038837169" />
-    <state width="1323" height="233" key="GridCell.Tab.0.right" timestamp="1652038837169">
+    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1652044177755" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1652044177755">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="233" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1652038837169" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1652044177755" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1652025584354">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -163,10 +168,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="213" y="24" key="Maven.ArtifactSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1651953521505" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1651968484185">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1652039047302">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1651968484185" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1652039047302" />
     <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1651966696081">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -179,5 +184,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1652024352488" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1652042651215">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1652042651215" />
   </component>
 </project>

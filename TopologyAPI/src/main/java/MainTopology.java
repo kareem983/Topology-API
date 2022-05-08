@@ -1,5 +1,4 @@
 import APIs.API;
-import models.Topology;
 
 import java.util.Scanner;
 
@@ -45,7 +44,7 @@ public class MainTopology {
 
 
     private static void userChoicesInput() {
-        System.out.println("===============================================");
+        System.out.println("\n===============================================");
         System.out.println("Enter 1 to Read a topology from a given JSON file and store it in the memory.");
         System.out.println("Enter 2 to Write a given topology to a JSON file.");
         System.out.println("Enter 3 to Query about which topologies are currently in the memory.");
@@ -54,22 +53,29 @@ public class MainTopology {
         System.out.println("Enter 6 to Query about which devices are connected to a given netlist node in " +
                 "a given topology.");
         System.out.println("Enter 0 to Exit.");
-        System.out.println("===============================================");
+        System.out.println("===============================================\n");
         System.out.print("Enter Your Choice: ");
     }
 
 
     private static void readJSON() {
-        System.out.print("Enter the File Name: ");
+        System.out.print("Enter the Json File Name: ");
         String fileName = input.next();
-        API api = new API();
-        Topology top = api.readJSON(fileName);
-        if (top != null) {
-            System.out.println("File Stored Successfully");
+        API api = API.getInstance();
+        if (api.readJSON(fileName) != null) {
+            System.out.println("File Stored in Memory Successfully.");
         }
     }
 
     private static void writeJSON() {
+        System.out.print("Enter the Topology ID: ");
+        String topologyID = input.next();
+        System.out.print("Enter the Name of new Json File: ");
+        String newJsonFileName = input.next();
+        API api = API.getInstance();
+        if (api.writeJSON(topologyID, newJsonFileName)) {
+            System.out.println("File Stored in new JSON File Successfully.");
+        }
     }
 
     private static void queryTopologies() {

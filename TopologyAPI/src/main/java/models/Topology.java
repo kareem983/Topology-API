@@ -51,4 +51,12 @@ public class Topology {
     public void setComponentJsonNode(JsonNode componentJsonNode) {
         this.componentJsonNode = componentJsonNode;
     }
+
+    public JsonNode getTopologyJsonNode() {
+        return topologyJsonNode;
+    }
+
+    public void setTopologyJsonNode(JsonNode topologyJsonNode) {
+        this.topologyJsonNode = topologyJsonNode;
+    }
 }
