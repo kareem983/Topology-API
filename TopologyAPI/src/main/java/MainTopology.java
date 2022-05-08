@@ -96,10 +96,11 @@ public class MainTopology {
                 System.out.println(top.toString());
             }
         }
-
     }
 
     private static void deleteTopology() {
+
+
     }
 
     private static void queryDevices() {
