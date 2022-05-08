@@ -4,8 +4,16 @@
     <list default="true" id="f1a17b3e-5397-495f-85cc-0d1c55643026" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ComponentData.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTopology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTopology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NetList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/NetList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Topology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Topology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Component.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ComponentData.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTopology.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTopology.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NetList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Topology.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -36,6 +45,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="MainTopology" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -76,13 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651957053486</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding The OOP Design for the Topology.&#10;Adding Topology Json File.">
+      <created>1651968469238</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651968469238</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding Unit Testing Dependencies (JUnit) into The Project" />
     <MESSAGE value="Adding All User Input Choices." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding All User Input Choices." />
+    <MESSAGE value="Adding The OOP Design for the Topology.&#10;Adding Topology Json File." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding The OOP Design for the Topology.&#10;Adding Topology Json File." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Inspections" timestamp="1651952850465">
@@ -93,45 +111,73 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1651963979713" />
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1651962988512">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1652037426133">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1651962988512" />
-    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1651957051728">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1652037426133" />
+    <state x="301" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1652037853222">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651957051728" />
+    <state x="301" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1652037853222" />
+    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1651968467171">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651968467171" />
     <state x="129" y="56" key="DiffContextDialog" timestamp="1651956899480">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="129" y="56" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1651956899480" />
-    <state width="1323" height="419" key="GridCell.Tab.0.bottom" timestamp="1651968006053">
+    <state width="1323" height="233" key="GridCell.Tab.0.bottom" timestamp="1652038837169">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="419" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651968006053" />
-    <state width="1323" height="419" key="GridCell.Tab.0.center" timestamp="1651968006053">
+    <state width="1323" height="233" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1652038837169" />
+    <state width="1323" height="233" key="GridCell.Tab.0.center" timestamp="1652038837169">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="419" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1651968006053" />
-    <state width="1323" height="419" key="GridCell.Tab.0.left" timestamp="1651968006053">
+    <state width="1323" height="233" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1652038837169" />
+    <state width="1323" height="233" key="GridCell.Tab.0.left" timestamp="1652038837169">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="419" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1651968006053" />
-    <state width="1323" height="419" key="GridCell.Tab.0.right" timestamp="1651968006053">
+    <state width="1323" height="233" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1652038837169" />
+    <state width="1323" height="233" key="GridCell.Tab.0.right" timestamp="1652038837169">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="419" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1651968006053" />
+    <state width="1323" height="233" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1652038837169" />
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1652025584354">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1652025584354" />
+    <state width="1323" height="227" key="GridCell.Tab.1.center" timestamp="1652025584354">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="227" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1652025584354" />
+    <state width="1323" height="227" key="GridCell.Tab.1.left" timestamp="1652025584354">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="227" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1652025584354" />
+    <state width="1323" height="227" key="GridCell.Tab.1.right" timestamp="1652025584354">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="227" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1652025584354" />
     <state x="213" y="24" key="Maven.ArtifactSearchDialog" timestamp="1651953521505">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="213" y="24" key="Maven.ArtifactSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1651953521505" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1651957063765">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1651968484185">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1651957063765" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1651968484185" />
     <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1651966696081">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1651966696081" />
+    <state x="425" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1651982639973">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="425" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.738@0.0.1366.738" timestamp="1651982639973" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1652024352488">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1652024352488" />
   </component>
 </project>
