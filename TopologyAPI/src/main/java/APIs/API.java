@@ -71,7 +71,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
 
     @Override
     public ArrayList<Topology> queryTopologies() {
-        return null;
+        return currentTopologies;
     }
 
     @Override
