@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f1a17b3e-5397-495f-85cc-0d1c55643026" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTopology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTopology.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTopology.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTopology.class" afterDir="false" />
     </list>
@@ -32,6 +33,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="MainTopology" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -65,49 +69,69 @@
       <option name="project" value="LOCAL" />
       <updated>1651953857768</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding All User Input Choices.">
+      <created>1651957053486</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651957053486</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding Unit Testing Dependencies (JUnit) into The Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Unit Testing Dependencies (JUnit) into The Project" />
+    <MESSAGE value="Adding All User Input Choices." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding All User Input Choices." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Inspections" timestamp="1651952850465">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1651952850465" />
-    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1651956984502">
+    <state x="275" y="27" key="#Project_Structure" timestamp="1651963979713">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651956984502" />
+    <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1651963979713" />
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1651962988512">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1651962988512" />
+    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1651957051728">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651957051728" />
     <state x="129" y="56" key="DiffContextDialog" timestamp="1651956899480">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="129" y="56" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1651956899480" />
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1651956785161">
+    <state width="1323" height="419" key="GridCell.Tab.0.bottom" timestamp="1651968006053">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651956785161" />
-    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1651956785161">
+    <state width="1323" height="419" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651968006053" />
+    <state width="1323" height="419" key="GridCell.Tab.0.center" timestamp="1651968006053">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1651956785161" />
-    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1651956785161">
+    <state width="1323" height="419" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1651968006053" />
+    <state width="1323" height="419" key="GridCell.Tab.0.left" timestamp="1651968006053">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1651956785161" />
-    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1651956785161">
+    <state width="1323" height="419" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1651968006053" />
+    <state width="1323" height="419" key="GridCell.Tab.0.right" timestamp="1651968006053">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1651956785161" />
+    <state width="1323" height="419" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1651968006053" />
     <state x="213" y="24" key="Maven.ArtifactSearchDialog" timestamp="1651953521505">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="213" y="24" key="Maven.ArtifactSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1651953521505" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1651953870517">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1651957063765">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1651953870517" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1651957063765" />
+    <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1651966696081">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1651966696081" />
   </component>
 </project>

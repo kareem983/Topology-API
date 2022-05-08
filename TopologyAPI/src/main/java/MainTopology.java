@@ -21,7 +21,7 @@ public class MainTopology {
                     writeJSON();
                     break;
                 case '3':
-                    queryCurrentTopology();
+                    queryTopologies();
                     break;
                 case '4':
                     deleteTopology();
@@ -30,7 +30,7 @@ public class MainTopology {
                     queryDevices();
                     break;
                 case '6':
-                    queryDevicesWithNetList();
+                    queryDevicesWithNetListNode();
                     break;
                 default:
                     System.out.println("### Invalid Input ###");
@@ -62,7 +62,7 @@ public class MainTopology {
     private static void writeJSON() {
     }
 
-    private static void queryCurrentTopology() {
+    private static void queryTopologies() {
     }
 
     private static void deleteTopology() {
@@ -71,7 +71,7 @@ public class MainTopology {
     private static void queryDevices() {
     }
 
-    private static void queryDevicesWithNetList() {
+    private static void queryDevicesWithNetListNode() {
     }
 
 }
