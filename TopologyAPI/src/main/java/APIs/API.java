@@ -1,6 +1,5 @@
 package APIs;
 
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.Component;
 import models.Topology;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -76,7 +75,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     @Override
     public boolean deleteTopology(String topologyID) {
         Topology selectedTopology = getSelectedTopology(topologyID);
-        if(selectedTopology != null){
+        if (selectedTopology != null) {
             currentTopologies.remove(selectedTopology);
             filesIds.remove(topologyID);
             return true;
@@ -86,6 +85,17 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
 
     @Override
     public ArrayList<Component> queryDevices(String topologyID) {
+        Topology selectedTopology = getSelectedTopology(topologyID);
+
+        if (selectedTopology != null) {
+            if (selectedTopology.getComponent().size() == 0)
+                System.out.println("There are not any Device in this Topology");
+
+            return selectedTopology.getComponent();
+        }
+
+
+        System.out.println("[Incorrect] the Topology ID doesn't Exist in the memory!!!");
         return null;
     }
 

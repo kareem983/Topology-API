@@ -1,6 +1,6 @@
 import APIs.API;
+import models.Component;
 import models.Topology;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -93,8 +93,7 @@ public class MainTopology {
                 System.out.println("\n**** Topology ID: " + top.getID() + " ****");
                 System.out.println(top.toString());
             }
-        }
-        else
+        } else
             System.out.println("There are not Topologies in Memory!!!");
     }
 
@@ -114,6 +113,21 @@ public class MainTopology {
     }
 
     private static void queryDevices() {
+        if (API.currentTopologies.size() != 0) {
+            System.out.println("Choose Id From below IDs ");
+            displayCurrentTopologies();
+            System.out.print("Your Topology ID Choice: ");
+            String topologyID = input.next();
+            API api = API.getInstance();
+            ArrayList<Component> components = api.queryDevices(topologyID);
+            if (components != null){
+                for(Component component:components){
+                    System.out.println(component.toString());
+                }
+            }
+
+        } else System.out.println("There are not Topologies in Memory!!!");
+
     }
 
     private static void queryDevicesWithNetListNode() {

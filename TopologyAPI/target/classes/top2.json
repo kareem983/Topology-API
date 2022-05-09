@@ -1,0 +1,30 @@
+{
+  "id": "top2",
+  "components": [
+    {
+      "type": "device1",
+      "id": "d1",
+      "resistance": {
+        "default": 50,
+        "min": 20,
+        "max": 1500
+      },
+      "netlist": {
+        "t1": "hdd",
+        "t2": "m1"
+      }
+    },
+    {
+      "type": "device2",
+      "id": "d2",
+      "m(l)": {
+        "default": 5.5,
+        "min": 2,
+        "max": 3
+      },
+      "netlist": {
+        "drain": "n1"
+      }
+    }
+  ]
+}
