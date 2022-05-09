@@ -3,22 +3,22 @@ package models;
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class NetList {
-    private JsonNode netList;
+    private JsonNode netListJsonNode;
 
-    public NetList(JsonNode netList) {
-        this.netList = netList;
+    public NetList(JsonNode netListJsonNode) {
+        this.netListJsonNode = netListJsonNode;
     }
 
     @Override
     public String toString() {
-        return this.netList.toPrettyString();
+        return this.netListJsonNode.toPrettyString();
     }
 
-    public JsonNode getNetList() {
-        return netList;
+    public JsonNode getNetListJsonNode() {
+        return netListJsonNode;
     }
 
-    public void setNetList(JsonNode netList) {
-        this.netList = netList;
+    public void setNetListJsonNode(JsonNode netListJsonNode) {
+        this.netListJsonNode = netListJsonNode;
     }
 }

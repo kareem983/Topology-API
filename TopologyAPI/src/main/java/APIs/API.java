@@ -1,6 +1,7 @@
 package APIs;
 
 import models.Component;
+import models.IOMessages;
 import models.Topology;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,11 +12,10 @@ import java.util.ArrayList;
 
 public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     private String FILE_PATH;
-    private ObjectMapper objectMapper;
+    private final ObjectMapper objectMapper;
     private static API instance;
-    private static ArrayList<String> filesIds = new ArrayList<>();
-    public static ArrayList<Topology> currentTopologies = new ArrayList<>();
-
+    private final static ArrayList<String> filesIds = new ArrayList<>();
+    public final static ArrayList<Topology> currentTopologies = new ArrayList<>();
 
     public API() {
         this.FILE_PATH = "src\\main\\resources\\";
@@ -37,7 +37,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
             JsonNode topologyJsonNode = this.objectMapper.readTree(topologyJsonString);
             Topology newTopology = new Topology(topologyJsonNode);
             if (this.checkFileExist(newTopology.getID())) {
-                System.out.println("You Can't Add the Json file that has The Same Topology ID Twice!!!");
+                System.out.println(IOMessages.fileTwice);
                 return null;
             }
             currentTopologies.add(newTopology);
@@ -45,7 +45,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
             return newTopology;
 
         } catch (Exception e) {
-            System.out.println("Incorrect File Name!!!");
+            System.out.println(IOMessages.incorrectFileName);
             return null;
         }
 
@@ -89,12 +89,12 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
 
         if (selectedTopology != null) {
             if (selectedTopology.getComponent().size() == 0)
-                System.out.println("There are not any Device in this Topology");
+                System.out.println(IOMessages.deviceNotExist);
 
             return selectedTopology.getComponent();
         }
 
-        System.out.println("[Incorrect] the Topology ID doesn't Exist in the memory!!!");
+        System.out.println(IOMessages.topologyIDNotExist);
         return null;
     }
 
@@ -102,19 +102,20 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     public ArrayList<Component> queryDevicesWithNetListNode(String topologyID, String netListNodeID) {
         ArrayList<Component> components = new ArrayList<>();
         Topology selectedTopology = getSelectedTopology(topologyID);
+
         if (selectedTopology != null) {
             for (Component component : selectedTopology.getComponent()) {
-                if (component.getNetList().getNetList().findValue(netListNodeID) != null)
+                if (component.getNetList().getNetListJsonNode().findValue(netListNodeID) != null)
                     components.add((component));
             }
 
             if (components.size() == 0)
-                System.out.println("There are not any Device in this Topology that match the NetListID");
+                System.out.println(IOMessages.DeviceWithNetListNotExist);
 
             return components;
         }
 
-        System.out.println("[Incorrect] the Topology ID doesn't Exist in the memory!!!");
+        System.out.println(IOMessages.topologyIDNotExist);
         return null;
     }
 
