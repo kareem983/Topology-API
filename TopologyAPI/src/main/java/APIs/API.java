@@ -1,5 +1,6 @@
 package APIs;
 
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.Component;
 import models.Topology;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -13,7 +14,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     private String FILE_PATH;
     private ObjectMapper objectMapper;
     private static API instance;
-    private static ArrayList<String> pathsFiles = new ArrayList<>();
+    private static ArrayList<String> filesIds = new ArrayList<>();
     public static ArrayList<Topology> currentTopologies = new ArrayList<>();
 
 
@@ -31,17 +32,17 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     @Override
     public Topology readJSON(String fileName) {
         this.FILE_PATH += fileName + ".json";
-        if (this.checkFileExist()) {
-            System.out.println("You Can't Add the same Json File Twice!!!");
-            return null;
-        }
 
         try {
             String topologyJsonString = new String(Files.readAllBytes(Paths.get(this.FILE_PATH)));
             JsonNode topologyJsonNode = this.objectMapper.readTree(topologyJsonString);
             Topology newTopology = new Topology(topologyJsonNode);
-            pathsFiles.add(this.FILE_PATH);
+            if (this.checkFileExist(newTopology.getID())) {
+                System.out.println("You Can't Add the Json file that has The Same Topology ID Twice!!!");
+                return null;
+            }
             currentTopologies.add(newTopology);
+            filesIds.add(newTopology.getID());
             return newTopology;
 
         } catch (Exception e) {
@@ -53,17 +54,16 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
 
     @Override
     public boolean writeJSON(String topologyID, String newJsonFileName) {
-        JsonNode topology = getSelectedTopology(topologyID);
+        JsonNode topology = getSelectedTopologyJsonNode(topologyID);
 
         try {
             if (topology != null) {
-                this.objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(this.FILE_PATH +
-                        newJsonFileName + ".json"), topology);
+                this.objectMapper.writerWithDefaultPrettyPrinter().writeValue(
+                        new File(this.FILE_PATH + newJsonFileName + ".json"), topology);
                 return true;
             } else throw new Exception();
 
         } catch (Exception e) {
-            System.out.println("[Incorrect] the Topology ID doesn't Exist in the memory!!!");
             return false;
         }
     }
@@ -75,6 +75,12 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
 
     @Override
     public boolean deleteTopology(String topologyID) {
+        Topology selectedTopology = getSelectedTopology(topologyID);
+        if(selectedTopology != null){
+            currentTopologies.remove(selectedTopology);
+            filesIds.remove(topologyID);
+            return true;
+        }
         return false;
     }
 
@@ -90,15 +96,26 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
 
 
     // Helpers
-    private boolean checkFileExist() {
-        return pathsFiles.contains(this.FILE_PATH);
+    private boolean checkFileExist(String topologyID) {
+        return filesIds.contains(topologyID);
     }
 
-    private JsonNode getSelectedTopology(String topologyID) {
+    private JsonNode getSelectedTopologyJsonNode(String topologyID) {
         JsonNode topology = null;
         for (Topology top : currentTopologies) {
             if (top.getID().equals(topologyID)) {
                 topology = top.getTopologyJsonNode();
+                break;
+            }
+        }
+        return topology;
+    }
+
+    private Topology getSelectedTopology(String topologyID) {
+        Topology topology = null;
+        for (Topology top : currentTopologies) {
+            if (top.getID().equals(topologyID)) {
+                topology = top;
                 break;
             }
         }

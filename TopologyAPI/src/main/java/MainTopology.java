@@ -64,16 +64,14 @@ public class MainTopology {
         System.out.print("Enter the Json File Name: ");
         String fileName = input.next();
         API api = API.getInstance();
-        if (api.readJSON(fileName) != null) {
+        if (api.readJSON(fileName) != null)
             System.out.println("File Stored in Memory Successfully.");
-        }
     }
 
     private static void writeJSON() {
         if (API.currentTopologies.size() != 0) {
             System.out.println("Choose Id From below IDs ");
-            for (Topology top : API.currentTopologies)
-                System.out.println(top.getID());
+            displayCurrentTopologies();
             System.out.print("Your Topology ID Choice: ");
             String topologyID = input.next();
             System.out.print("Enter the Name of new Json File: ");
@@ -81,6 +79,8 @@ public class MainTopology {
             API api = API.getInstance();
             if (api.writeJSON(topologyID, newJsonFileName))
                 System.out.println("File Stored in new JSON File Successfully.");
+            else
+                System.out.println("[Incorrect] the Topology ID doesn't Exist in the memory!!!");
 
         } else System.out.println("There are not Topologies in Memory!!!");
     }
@@ -88,19 +88,29 @@ public class MainTopology {
     private static void queryTopologies() {
         API api = API.getInstance();
         ArrayList<Topology> currentTopologies = api.queryTopologies();
-        if (currentTopologies.size() == 0)
-            System.out.println("There are not Topologies in Memory!!!");
-        else {
+        if (currentTopologies.size() != 0) {
             for (Topology top : currentTopologies) {
                 System.out.println("\n**** Topology ID: " + top.getID() + " ****");
                 System.out.println(top.toString());
             }
         }
+        else
+            System.out.println("There are not Topologies in Memory!!!");
     }
 
     private static void deleteTopology() {
+        if (API.currentTopologies.size() != 0) {
+            System.out.println("Choose Id From below IDs ");
+            displayCurrentTopologies();
+            System.out.print("Your Topology ID Choice: ");
+            String topologyID = input.next();
+            API api = API.getInstance();
+            if (api.deleteTopology(topologyID))
+                System.out.println("Topology Deleted from memory Successfully.");
+            else
+                System.out.println("[Incorrect] the Topology ID doesn't Exist in the memory!!!");
 
-
+        } else System.out.println("There are not Topologies in Memory!!!");
     }
 
     private static void queryDevices() {
@@ -109,4 +119,9 @@ public class MainTopology {
     private static void queryDevicesWithNetListNode() {
     }
 
+    // Helpers
+    private static void displayCurrentTopologies() {
+        for (Topology top : API.currentTopologies)
+            System.out.println(top.getID());
+    }
 }
