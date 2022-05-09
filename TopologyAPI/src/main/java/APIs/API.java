@@ -94,13 +94,27 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
             return selectedTopology.getComponent();
         }
 
-
         System.out.println("[Incorrect] the Topology ID doesn't Exist in the memory!!!");
         return null;
     }
 
     @Override
     public ArrayList<Component> queryDevicesWithNetListNode(String topologyID, String netListNodeID) {
+        ArrayList<Component> components = new ArrayList<>();
+        Topology selectedTopology = getSelectedTopology(topologyID);
+        if (selectedTopology != null) {
+            for (Component component : selectedTopology.getComponent()) {
+                if (component.getNetList().getNetList().findValue(netListNodeID) != null)
+                    components.add((component));
+            }
+
+            if (components.size() == 0)
+                System.out.println("There are not any Device in this Topology that match the NetListID");
+
+            return components;
+        }
+
+        System.out.println("[Incorrect] the Topology ID doesn't Exist in the memory!!!");
         return null;
     }
 

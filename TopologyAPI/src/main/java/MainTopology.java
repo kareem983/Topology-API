@@ -131,6 +131,22 @@ public class MainTopology {
     }
 
     private static void queryDevicesWithNetListNode() {
+        if (API.currentTopologies.size() != 0) {
+            System.out.println("Choose Id From below IDs ");
+            displayCurrentTopologies();
+            System.out.print("Your Topology ID Choice: ");
+            String topologyID = input.next();
+            System.out.print("Enter The netListID: ");
+            String netListID = input.next();
+            API api = API.getInstance();
+            ArrayList<Component> components = api.queryDevicesWithNetListNode(topologyID, netListID);
+            if (components != null){
+                for(Component component:components){
+                    System.out.println(component.toString());
+                }
+            }
+
+        } else System.out.println("There are not Topologies in Memory!!!");
     }
 
     // Helpers
