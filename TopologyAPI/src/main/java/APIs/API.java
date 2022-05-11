@@ -22,12 +22,23 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
         this.objectMapper = new ObjectMapper();
     }
 
-    //Singleton Design Pattern
+    /**
+     * The Description of the method to get one instance from API class during the runtime.
+     * the function apply Singleton Design Pattern.
+     *
+     * @return Unique API instance.
+     */
     public static API getInstance() {
         if (instance == null) return new API();
         return instance;
     }
 
+    /**
+     * The Description of the method to read the topology from the json file and store it in the memory.
+     *
+     * @param fileName The json file name that the function read it.
+     * @return New topology.
+     */
     @Override
     public Topology readJSON(String fileName) {
         this.FILE_PATH += fileName + ".json";
@@ -51,6 +62,13 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
 
     }
 
+    /**
+     * The Description of the method to write the topology from the memory to the json file.
+     *
+     * @param topologyID      The topology id that the function write it in the json file.
+     * @param newJsonFileName The new file name that the function save it.
+     * @return Boolean value that the file stored or not (true/false).
+     */
     @Override
     public boolean writeJSON(String topologyID, String newJsonFileName) {
         JsonNode topology = getSelectedTopologyJsonNode(topologyID);
@@ -67,11 +85,22 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
         }
     }
 
+    /**
+     * The Description of the method to query all the topologies from the memory.
+     *
+     * @return List of topologies that in the memory.
+     */
     @Override
     public ArrayList<Topology> queryTopologies() {
         return currentTopologies;
     }
 
+    /**
+     * The Description of the method to delete the given topology from the memory.
+     *
+     * @param topologyID The topology id that the function delete it.
+     * @return Boolean value that the topology is deleted from the memory or not (true/false)
+     */
     @Override
     public boolean deleteTopology(String topologyID) {
         Topology selectedTopology = getSelectedTopology(topologyID);
@@ -83,6 +112,12 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
         return false;
     }
 
+    /**
+     * The Description of the method to query all the electronic devices in the given topology from the memory.
+     *
+     * @param topologyID The topology id that the function query about it.
+     * @return List of electronic devices that in the given topology.
+     */
     @Override
     public ArrayList<Component> queryDevices(String topologyID) {
         Topology selectedTopology = getSelectedTopology(topologyID);
@@ -98,6 +133,14 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
         return null;
     }
 
+    /**
+     * The Description of the method to query all the electronic devices in the given topology and math
+     * with et list id from the memory.
+     *
+     * @param topologyID    The topology id that the function query about it.
+     * @param netListNodeID The net list id that the function use it to match with each device.
+     * @return List of electronic devices that in the given topology and match the netListNodeID.
+     */
     @Override
     public ArrayList<Component> queryDevicesWithNetListNode(String topologyID, String netListNodeID) {
         ArrayList<Component> components = new ArrayList<>();
@@ -120,11 +163,25 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
 
-    // Helpers
+    // Helpers Methods
+
+    /**
+     * The Description of the method to check that the given topology is exist in the memory or not.
+     *
+     * @param topologyID The given topology id that the function check for it.
+     * @return Boolean value that The the file of the given topology exist in the memory or not (true/false).
+     */
     private boolean checkFileExist(String topologyID) {
         return filesIds.contains(topologyID);
     }
 
+    /**
+     * The Description of the method to get the json node of the topology from the memory according for
+     * the given topology id.
+     *
+     * @param topologyID the given topology id that the function search for it's topology.
+     * @return Json node for the given topology id.
+     */
     private JsonNode getSelectedTopologyJsonNode(String topologyID) {
         JsonNode topology = null;
         for (Topology top : currentTopologies) {
@@ -136,6 +193,12 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
         return topology;
     }
 
+    /**
+     * The Description of the method to get the topology from the memory according for the given topology id.
+     *
+     * @param topologyID the given topology id that the function search for it's topology.
+     * @return The topology for the given topology id.
+     */
     private Topology getSelectedTopology(String topologyID) {
         Topology topology = null;
         for (Topology top : currentTopologies) {
