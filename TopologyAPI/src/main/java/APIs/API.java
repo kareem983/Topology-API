@@ -23,7 +23,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
     /**
-     * The Description of the method to get one instance from API class during the runtime.
+     * The description of the method to get one instance from API class during the runtime.
      * the function apply Singleton Design Pattern.
      *
      * @return Unique API instance.
@@ -34,7 +34,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
     /**
-     * The Description of the method to read the topology from the json file and store it in the memory.
+     * The description of the method to read the topology from the json file and store it in the memory.
      *
      * @param fileName The json file name that the function read it.
      * @return New topology.
@@ -63,7 +63,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
     /**
-     * The Description of the method to write the topology from the memory to the json file.
+     * The description of the method to write the topology from the memory to the json file.
      *
      * @param topologyID      The topology id that the function write it in the json file.
      * @param newJsonFileName The new file name that the function save it.
@@ -86,7 +86,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
     /**
-     * The Description of the method to query all the topologies from the memory.
+     * The description of the method to query all the topologies from the memory.
      *
      * @return List of topologies that in the memory.
      */
@@ -96,7 +96,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
     /**
-     * The Description of the method to delete the given topology from the memory.
+     * The description of the method to delete the given topology from the memory.
      *
      * @param topologyID The topology id that the function delete it.
      * @return Boolean value that the topology is deleted from the memory or not (true/false)
@@ -113,7 +113,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
     /**
-     * The Description of the method to query all the electronic devices in the given topology from the memory.
+     * The description of the method to query all the electronic devices in the given topology from the memory.
      *
      * @param topologyID The topology id that the function query about it.
      * @return List of electronic devices that in the given topology.
@@ -134,7 +134,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
     /**
-     * The Description of the method to query all the electronic devices in the given topology and math
+     * The description of the method to query all the electronic devices in the given topology and math
      * with et list id from the memory.
      *
      * @param topologyID    The topology id that the function query about it.
@@ -166,7 +166,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     // Helpers Methods
 
     /**
-     * The Description of the method to check that the given topology is exist in the memory or not.
+     * The description of the method to check that the given topology is exist in the memory or not.
      *
      * @param topologyID The given topology id that the function check for it.
      * @return Boolean value that The the file of the given topology exist in the memory or not (true/false).
@@ -176,7 +176,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
     /**
-     * The Description of the method to get the json node of the topology from the memory according for
+     * The description of the method to get the json node of the topology from the memory according for
      * the given topology id.
      *
      * @param topologyID the given topology id that the function search for it's topology.
@@ -194,7 +194,7 @@ public class API implements JsonAPI, TopologyQuery, DeviceQuery {
     }
 
     /**
-     * The Description of the method to get the topology from the memory according for the given topology id.
+     * The description of the method to get the topology from the memory according for the given topology id.
      *
      * @param topologyID the given topology id that the function search for it's topology.
      * @return The topology for the given topology id.

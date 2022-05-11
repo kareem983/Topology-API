@@ -9,24 +9,40 @@ public class Topology {
     private JsonNode componentJsonNode;
     private ArrayList<Component> components;
 
+    /**
+     * The constructor role to initialize the class variables and data structure.
+     *
+     * @param topologyJsonNode The topology json node that has the object of topology from json file as a tree.
+     */
     public Topology(JsonNode topologyJsonNode) {
         this.topologyJsonNode = topologyJsonNode;
         this.components = new ArrayList<>();
         this.storeTopologyInMemory();
     }
 
-    private void storeTopologyInMemory(){
+    /**
+     * The description of the method to to parse the json object and store it in the model(class).
+     */
+    private void storeTopologyInMemory() {
         this.id = this.topologyJsonNode.findValue("id").asText();
         this.componentJsonNode = this.topologyJsonNode.findValue("components");
         for (int i = 0; i < componentJsonNode.size(); i++)
             this.components.add(new Component(componentJsonNode.get(i)));
     }
 
+    /**
+     * The description of the method to get the topology info as a tree.
+     *
+     * @return String that has the topology info.
+     */
     @Override
     public String toString() {
         return topologyJsonNode.toPrettyString();
     }
 
+    /**
+     * @return ID variable.
+     */
     public String getID() {
         return id;
     }
@@ -35,6 +51,9 @@ public class Topology {
         this.id = id;
     }
 
+    /**
+     * @return Component object.
+     */
     public ArrayList<Component> getComponent() {
         return components;
     }
@@ -51,6 +70,9 @@ public class Topology {
         this.componentJsonNode = componentJsonNode;
     }
 
+    /**
+     * @return Json node of topology.
+     */
     public JsonNode getTopologyJsonNode() {
         return topologyJsonNode;
     }

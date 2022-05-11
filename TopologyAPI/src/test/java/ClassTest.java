@@ -8,7 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 
-@DisplayName("Automatic testing on Classes level")
+@DisplayName("Automatic testing on Class level")
 public class ClassTest {
     private String FILE_PATH;
     private final ObjectMapper objectMapper;
