@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1a17b3e-5397-495f-85cc-0d1c55643026" name="Default Changelist" comment="enhancement: Refactoring on Overall Code.">
+    <list default="true" id="f1a17b3e-5397-495f-85cc-0d1c55643026" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/APIs/API.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/APIs/API.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/IOMessages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/IOMessages.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.APITest">
+  <component name="RunManager" selected="JUnit.ClassTest">
     <configuration name="MainTopology" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTopology" />
       <module name="TopologyAPI" />
@@ -66,16 +64,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APITest.readJsonTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TopologyAPI" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="APITest" />
-      <option name="METHOD_NAME" value="readJsonTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="APITest.readJsonTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TopologyAPI" />
       <option name="PACKAGE_NAME" value="" />
@@ -86,13 +74,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TopologyAPI" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClassTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClassTest" />
         <item itemvalue="JUnit.APITest" />
         <item itemvalue="Application.MainTopology" />
         <item itemvalue="JUnit.APITest.deleteTopologyTest1" />
         <item itemvalue="JUnit.APITest.readJsonTest2" />
-        <item itemvalue="JUnit.APITest.readJsonTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652068175949</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="testing: Adding Automation Unit Testing on API Level.">
+      <created>1652228475217</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1652228475217</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -207,7 +211,8 @@
     <MESSAGE value="Adding Query about all devices are in a given topology (Feature)." />
     <MESSAGE value="Feature: Adding Query about all devices are connected to a given netList ID in a given Topology." />
     <MESSAGE value="enhancement: Refactoring on Overall Code." />
-    <option name="LAST_COMMIT_MESSAGE" value="enhancement: Refactoring on Overall Code." />
+    <MESSAGE value="testing: Adding Automation Unit Testing on API Level." />
+    <option name="LAST_COMMIT_MESSAGE" value="testing: Adding Automation Unit Testing on API Level." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Inspections" timestamp="1651952850465">
@@ -226,30 +231,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="301" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1652037853222" />
-    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1652068404521">
+    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1652230675761">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1652068404521" />
+    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1652230675761" />
     <state x="129" y="56" key="DiffContextDialog" timestamp="1651956899480">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="129" y="56" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1651956899480" />
-    <state width="1323" height="580" key="GridCell.Tab.0.bottom" timestamp="1652228354579">
+    <state width="1323" height="345" key="GridCell.Tab.0.bottom" timestamp="1652230623510">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="580" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1652228354579" />
-    <state width="1323" height="580" key="GridCell.Tab.0.center" timestamp="1652228354579">
+    <state width="1323" height="345" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1652230623510" />
+    <state width="1323" height="345" key="GridCell.Tab.0.center" timestamp="1652230623510">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="580" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1652228354579" />
-    <state width="1323" height="580" key="GridCell.Tab.0.left" timestamp="1652228354579">
+    <state width="1323" height="345" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1652230623510" />
+    <state width="1323" height="345" key="GridCell.Tab.0.left" timestamp="1652230623510">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="580" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1652228354579" />
-    <state width="1323" height="580" key="GridCell.Tab.0.right" timestamp="1652228354579">
+    <state width="1323" height="345" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1652230623510" />
+    <state width="1323" height="345" key="GridCell.Tab.0.right" timestamp="1652230623510">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="580" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1652228354579" />
+    <state width="1323" height="345" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1652230623510" />
     <state width="1323" height="411" key="GridCell.Tab.1.bottom" timestamp="1652225090392">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -270,10 +275,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="213" y="24" key="Maven.ArtifactSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1651953521505" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1652068181875">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1652228485312">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1652068181875" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1652228485312" />
     <state x="379" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1652217510123">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
