@@ -1,6 +1,9 @@
-
 # Topology-API
+> A full API (JSON file) that has the data about topologies that consists of electronic components.
 
+[![](http://img.shields.io/badge/buildTool-maven-blue.svg?style=flat)](https://maven.apache.org/)
+[![](http://img.shields.io/badge/language-Java-brightgreen.svg?color=orange)](https://www.oracle.com/java/technologies/downloads/)
+![](https://img.shields.io/github/last-commit/kareem983/Topology-API)
 
 ## About
 A topology api is a set of electronic components that are connected together. Each topology consists of electronic components with netlists.
@@ -91,16 +94,6 @@ Applying a set of functionality such as (Read, Write, Delete, Queies, ... ) Json
 
 ```
 
-
-
-
-
-
-
-
-
-
-
 ## Working Screenshots
  
 <details>
@@ -177,5 +170,3 @@ Applying a set of functionality such as (Read, Write, Delete, Queies, ... ) Json
 - [Maven Repository](https://mvnrepository.com/) <br>
 - [Junit Testing](https://junit.org/junit5/docs/current/user-guide/) <br>
 - [JavaDoc](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html) <br>
-
-  
