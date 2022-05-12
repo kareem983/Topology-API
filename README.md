@@ -60,12 +60,6 @@ Applying a set of functionality such as (Read, Write, Delete, Queies, ... ) Json
   ```  
 </details>
 
-## Prerequisites
-
-1- Install Java programming language with IDE preferred `IntelliJ`.<br/>
-2- Install Maven managed build tool.<br/>
-3- Install Junit automated testing.<br/>
-
 ## Techniques
 - The app implementation consists of:<br>
   1- Object Oriented Programming concepts.<br>
@@ -73,6 +67,12 @@ Applying a set of functionality such as (Read, Write, Delete, Queies, ... ) Json
   3- Solid Principles Design Patterns `Single Responsibility`, `Interface Segregation`.<br>
   4- Well documentation code using `JavaDoc`.<br> 
   5- Automated unit testing using `Junit`.
+
+## Prerequisites
+
+1- Install Java programming language with IDE preferred `IntelliJ`.<br/>
+2- Install Maven managed build tool.<br/>
+3- Install Junit automated testing.<br/>
 
 ## Libraries
 
