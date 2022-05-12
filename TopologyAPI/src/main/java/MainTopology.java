@@ -131,7 +131,7 @@ public class MainTopology {
                 }
             }
 
-        } else System.out.println(IOMessages.topologyIDChoose);
+        } else System.out.println(IOMessages.topologyNotExist);
     }
 
     // Helpers

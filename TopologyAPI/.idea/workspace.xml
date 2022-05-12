@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1a17b3e-5397-495f-85cc-0d1c55643026" name="Default Changelist" comment="documentation: Adding The Documentation on Class Level.">
+    <list default="true" id="f1a17b3e-5397-495f-85cc-0d1c55643026" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/TopologyAPI.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ClassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ClassTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTopology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTopology.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +87,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainTopology" />
-        <item itemvalue="JUnit.APITest" />
         <item itemvalue="JUnit.ClassTest" />
+        <item itemvalue="JUnit.APITest" />
         <item itemvalue="JUnit.APITest.deleteTopologyTest1" />
         <item itemvalue="JUnit.APITest.readJsonTest2" />
       </list>
@@ -218,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652240025163</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="enhancement: Deleting unnecessary Files.">
+      <created>1652241054978</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1652241054978</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -238,7 +244,8 @@
     <MESSAGE value="testing: Adding Automation Unit Testing on Class Level." />
     <MESSAGE value="documentation: Adding The Documentation on API Level." />
     <MESSAGE value="documentation: Adding The Documentation on Class Level." />
-    <option name="LAST_COMMIT_MESSAGE" value="documentation: Adding The Documentation on Class Level." />
+    <MESSAGE value="enhancement: Deleting unnecessary Files." />
+    <option name="LAST_COMMIT_MESSAGE" value="enhancement: Deleting unnecessary Files." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Inspections" timestamp="1651952850465">
@@ -261,10 +268,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="430" y="92" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1652239768114" />
-    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1652240931663">
+    <state x="237" y="0" key="CommitChangelistDialog2" timestamp="1652241044693">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1652240931663" />
+    <state x="237" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1652241044693" />
     <state x="129" y="56" key="DiffContextDialog" timestamp="1651956899480">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -273,22 +280,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1652236909319" />
-    <state width="1323" height="406" key="GridCell.Tab.0.bottom" timestamp="1652240972848">
+    <state width="1323" height="143" key="GridCell.Tab.0.bottom" timestamp="1652393957023">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="406" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1652240972848" />
-    <state width="1323" height="406" key="GridCell.Tab.0.center" timestamp="1652240972848">
+    <state width="1323" height="143" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1652393957023" />
+    <state width="1323" height="143" key="GridCell.Tab.0.center" timestamp="1652393957008">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="406" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1652240972848" />
-    <state width="1323" height="406" key="GridCell.Tab.0.left" timestamp="1652240972848">
+    <state width="1323" height="143" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1652393957008" />
+    <state width="1323" height="143" key="GridCell.Tab.0.left" timestamp="1652393957008">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="406" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1652240972848" />
-    <state width="1323" height="406" key="GridCell.Tab.0.right" timestamp="1652240972848">
+    <state width="1323" height="143" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1652393957008" />
+    <state width="1323" height="143" key="GridCell.Tab.0.right" timestamp="1652393957008">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="406" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1652240972848" />
+    <state width="1323" height="143" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1652393957008" />
     <state width="1323" height="411" key="GridCell.Tab.1.bottom" timestamp="1652225090392">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -309,14 +316,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="213" y="24" key="Maven.ArtifactSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1651953521505" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1652240031984">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1652241058256">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1652240031984" />
-    <state x="379" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1652217510123">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1652241058256" />
+    <state x="379" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1652387494378">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1652217510123" />
+    <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1652387494378" />
     <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1651966696081">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
